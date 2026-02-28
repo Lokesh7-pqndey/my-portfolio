@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Lokesh Pandey — Data Analyst | SQL, Python, Power BI, Excel & ML Expert. 4+ years retail analytics experience.">
+  <title>Lokesh Pandey | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&family=Playfair+Display:wght@600;700&family=Dancing+Script:wght@500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+  <div class="noise-overlay"></div>
+  <div class="scroll-bar" id="scrollBar"></div>
+  <button class="btt" id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ═══ SIDE DOT SCROLL NAV ═══ -->
+  <div class="side-nav" id="sideNav">
+    <a href="#home" class="sn-dot active" data-tooltip="Home"></a>
+    <a href="#about" class="sn-dot" data-tooltip="About"></a>
+    <a href="#skills" class="sn-dot" data-tooltip="Skills"></a>
+    <a href="#projects" class="sn-dot" data-tooltip="Projects"></a>
+    <a href="#experience" class="sn-dot" data-tooltip="Experience"></a>
+    <a href="#certificates" class="sn-dot" data-tooltip="Certificates"></a>
+    <a href="#contact" class="sn-dot" data-tooltip="Contact"></a>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a href="#home" class="nav-brand">
+        <img src="assets/WhatsApp Image 2026-02-28 at 3.16.31 PM.jpeg" alt="Lokesh" class="nav-avatar">
+        <span class="nav-sig">Lokesh Pandey</span>
+      </a>
+      <ul class="navmenu" id="navmenu">
+        <li><a href="#home" class="nav3d on"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about" class="nav3d"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#skills" class="nav3d"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#projects" class="nav3d"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li><a href="#experience" class="nav3d"><i class="fas fa-chart-line"></i> Experience</a></li>
+        <li><a href="#certificates" class="nav3d"><i class="fas fa-award"></i> Certificates</a></li>
+        <li><a href="#contact" class="nav3d"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-lines"></div>
+    <div class="hero-bg-photo">
+      <img src="assets/WhatsApp Image 2026-02-28 at 3.16.31 PM.jpeg" alt="Lokesh Pandey">
+    </div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="container">
+      <div class="hero-row hero-row--full">
+        <div class="hero-left">
+          <div class="pill"><span class="pill-dot"></span> Open to Opportunities</div>
+          <h1 class="hero-name">
+            <span class="sub">Hello, I'm</span>
+            <span class="name grad-text">Lokesh Pandey.</span>
+          </h1>
+          <p class="hero-role"><span class="typed grad-text" id="typedText"></span><span class="cur">|</span></p>
+          <p class="hero-desc" style="line-height: 1.6;">
+            Data Analyst turning business data into measurable decisions.<br>
+            4+ years operational expertise combined with analytics & machine learning.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-glow"><i class="fas fa-folder-open"></i> View Projects</a>
+            <a href="assets/resume.pdf" class="btn-glow btn-glow-alt" target="_blank" download><i
+                class="fas fa-download"></i>
+              Get My CV</a>
+          </div>
+
+          <!-- IMPACT CARDS -->
+          <div class="hero-impact-cards">
+            <div class="hero-icard">
+              <div class="hero-icard-icon"><i class="fas fa-briefcase"></i></div>
+              <div class="hero-icard-val">4+</div>
+              <div class="hero-icard-lbl">Years Experience</div>
+            </div>
+            <div class="hero-icard">
+              <div class="hero-icard-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="hero-icard-val">15%</div>
+              <div class="hero-icard-lbl">Variance Reduced</div>
+            </div>
+            <div class="hero-icard">
+              <div class="hero-icard-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="hero-icard-val">84.68%</div>
+              <div class="hero-icard-lbl">ML Accuracy</div>
+            </div>
+            <div class="hero-icard">
+              <div class="hero-icard-icon"><i class="fas fa-rocket"></i></div>
+              <div class="hero-icard-val">5+</div>
+              <div class="hero-icard-lbl">Projects Delivered</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about" id="about">
+    <div class="about-particles" id="aboutParticles"></div>
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-user"></i> About Me</div>
+        <h2 class="grad-text">Who I Am</h2>
+        <p>A unique blend of retail operations and data analytics</p>
+      </div>
+      <div class="about-grid">
+        <!-- Left: Visual -->
+        <div class="about-left rv-l">
+          <div class="about-terminal">
+            <div class="term-header">
+              <div class="term-dots"><span></span><span></span><span></span></div>
+              <div class="term-title">data_analysis.sql</div>
+            </div>
+            <div class="term-body">
+              <div class="term-line"><span class="t-kw">SELECT</span> department, <span class="t-fn">SUM</span>(revenue)
+                <span class="t-kw">AS</span> total
+              </div>
+              <div class="term-line"><span class="t-kw">FROM</span> <span class="t-tbl">sales_data</span></div>
+              <div class="term-line"><span class="t-kw">WHERE</span> year = <span class="t-num">2025</span></div>
+              <div class="term-line"><span class="t-kw">GROUP BY</span> department</div>
+              <div class="term-line"><span class="t-kw">ORDER BY</span> total <span class="t-kw">DESC</span>;</div>
+              <div class="term-line term-result">▸ 1,247 rows · 15ms</div>
+              <div class="term-cursor"></div>
+            </div>
+            <div class="term-stats">
+              <div class="ts-item"><i class="fas fa-database"></i> 50K+ Rows</div>
+              <div class="ts-item"><i class="fas fa-bolt"></i> Optimized</div>
+              <div class="ts-item"><i class="fas fa-check-circle"></i> Clean Data</div>
+            </div>
+          </div>
+          <div class="about-exp-badge">
+            <div class="exp-ring-wrap">
+              <svg class="exp-ring" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" class="ring-track" />
+                <circle cx="50" cy="50" r="42" class="ring-progress" />
+              </svg>
+              <div class="exp-text"><span class="exp-num">4+</span><span class="exp-lbl">Years</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Content -->
+        <div class="about-right rv-r">
+          <div class="about-quote-box">
+            <i class="fas fa-quote-left aq-icon"></i>
+            <p>Turning data into insights, and insights into action.</p>
+          </div>
+          <h3 class="about-heading">From <span class="grad-text">Retail Floors</span> to <span class="grad-text">Data
+              Pipelines</span></h3>
+          <p class="about-text">
+            I'm Lokesh — a <strong>Data Analyst</strong> who bridges the gap between real-world operations and
+            analytics. With
+            <strong>4+ years at Reliance Retail</strong>, I don't just analyze numbers — I understand the business
+            behind them.
+          </p>
+          <p class="about-text">
+            My toolkit — <strong>SQL, Python, Power BI & Excel</strong> — helps me turn messy, raw data into
+            clear insights. From reducing stock variance by 15% to building ML pipelines with
+            84.68% accuracy, I believe in analysis that <strong>changes decisions</strong>.
+          </p>
+          <div class="about-impact-grid">
+            <div class="impact-card">
+              <div class="ic-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="ic-val grad-text">15%</div>
+              <div class="ic-label">Stock Variance Reduced</div>
+            </div>
+            <div class="impact-card">
+              <div class="ic-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="ic-val grad-text">84.68%</div>
+              <div class="ic-label">ML Churn Accuracy</div>
+            </div>
+            <div class="impact-card">
+              <div class="ic-icon"><i class="fas fa-rocket"></i></div>
+              <div class="ic-val grad-text">20%</div>
+              <div class="ic-label">Model Improvement</div>
+            </div>
+            <div class="impact-card">
+              <div class="ic-icon"><i class="fas fa-bolt"></i></div>
+              <div class="ic-val grad-text">40-60%</div>
+              <div class="ic-label">Faster Reporting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-code"></i> My Arsenal</div>
+        <h2 class="grad-text">Skills & Tools</h2>
+        <p>Technologies I use to deliver results</p>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-bars rv-l">
+          <h3>Core Proficiency</h3>
+          <div class="bar-group">
+            <div class="bar-labels"><span>Python</span><span>85%</span></div>
+            <div class="bar-bg">
+              <div class="bar-fg" data-w="85"></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-labels"><span>SQL</span><span>90%</span></div>
+            <div class="bar-bg">
+              <div class="bar-fg" data-w="90"></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-labels"><span>Power BI / DAX</span><span>88%</span></div>
+            <div class="bar-bg">
+              <div class="bar-fg" data-w="88"></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-labels"><span>Excel</span><span>92%</span></div>
+            <div class="bar-bg">
+              <div class="bar-fg" data-w="92"></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-labels"><span>Machine Learning</span><span>75%</span></div>
+            <div class="bar-bg">
+              <div class="bar-fg" data-w="75"></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <div class="bar-labels"><span>Data Visualization</span><span>88%</span></div>
+            <div class="bar-bg">
+              <div class="bar-fg" data-w="88"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-chips rv-r stg">
+
+          <div class="skills-group">
+            <h4 class="sk-group-title"><i class="fas fa-database"></i> DATA ANALYSIS</h4>
+            <div class="sk-group-chips">
+              <div class="sk-chip"><span class="sk-icon">�</span>
+                <div class="sk-name">Python</div>
+              </div>
+              <div class="sk-chip"><span class="sk-icon">🗄️</span>
+                <div class="sk-name">SQL</div>
+              </div>
+              <div class="sk-chip"><span class="sk-icon">📗</span>
+                <div class="sk-name">Excel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group" style="margin-top: 24px;">
+            <h4 class="sk-group-title"><i class="fas fa-chart-pie"></i> VISUALIZATION</h4>
+            <div class="sk-group-chips">
+              <div class="sk-chip"><span class="sk-icon">📊</span>
+                <div class="sk-name">Power BI</div>
+              </div>
+              <div class="sk-chip"><span class="sk-icon">📈</span>
+                <div class="sk-name">Dashboarding</div>
+              </div>
+              <div class="sk-chip"><span class="sk-icon">🎯</span>
+                <div class="sk-name">KPI Design</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group" style="margin-top: 24px;">
+            <h4 class="sk-group-title"><i class="fas fa-robot"></i> MACHINE LEARNING</h4>
+            <div class="sk-group-chips">
+              <div class="sk-chip"><span class="sk-icon">�</span>
+                <div class="sk-name">EDA</div>
+              </div>
+              <div class="sk-chip"><span class="sk-icon">🧠</span>
+                <div class="sk-name">Modeling</div>
+              </div>
+              <div class="sk-chip"><span class="sk-icon">📉</span>
+                <div class="sk-name">Evaluation</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-briefcase"></i> Portfolio</div>
+        <h2 class="grad-text">Featured Projects</h2>
+        <p>Real-world data projects with measurable business impact</p>
+      </div>
+      <div class="proj-grid stg">
+        <div class="proj-card">
+          <div class="proj-thumb"><img src="assets/project-amazon.png" alt="Amazon Sales">
+            <div class="proj-overlay"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="proj-body"><span class="proj-tag excel">Excel Analytics</span>
+            <h3>Amazon Sales Analytics Dashboard</h3>
+          </div>
+          <p class="proj-desc">
+          <ul class="proj-impact-list">
+            <li><i class="fas fa-check-circle"></i> Cleaned & standardized raw e-commerce data.</li>
+            <li><i class="fas fa-check-circle"></i> Built interactive KPI dashboards.</li>
+            <li><i class="fas fa-arrow-up"></i> Tracked Revenue, AOV, & Order Volume.</li>
+          </ul>
+          </p>
+          <div class="proj-foot">
+            <div class="proj-tools"><span class="proj-tt">Excel</span><span class="proj-tt">Data Cleansing</span><span
+                class="proj-tt">KPI</span></div>
+            <div style="display: flex; gap: 8px;">
+              <a href="#" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Lokesh7-pqndey" target="_blank" class="proj-link"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb"><img src="assets/project-wonderland.png" alt="Wonderland Sales">
+            <div class="proj-overlay"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="proj-body"><span class="proj-tag powerbi">SQL + Power BI</span>
+            <h3>Wonderland Sales Analytics</h3>
+          </div>
+          <p class="proj-desc">
+          <ul class="proj-impact-list">
+            <li><i class="fas fa-database"></i> Consolidated multi-year sales data with SQL.</li>
+            <li><i class="fas fa-chart-pie"></i> Modeled customer segmentation & profitability.</li>
+            <li><i class="fas fa-lightbulb"></i> Delivered insights for targeted marketing.</li>
+          </ul>
+          </p>
+          <div class="proj-foot">
+            <div class="proj-tools"><span class="proj-tt">SQL</span><span class="proj-tt">Power BI</span><span
+                class="proj-tt">DAX</span></div>
+            <div style="display: flex; gap: 8px;">
+              <a href="#" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Lokesh7-pqndey" target="_blank" class="proj-link"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb"><img src="assets/project-swiggy.png" alt="Swiggy Sales">
+            <div class="proj-overlay"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="proj-body"><span class="proj-tag excel">Excel Analytics</span>
+            <h3>Swiggy Sales Analytics</h3>
+          </div>
+          <p class="proj-desc">
+          <ul class="proj-impact-list">
+            <li><i class="fas fa-table"></i> Developed Pivot Table dashboards.</li>
+            <li><i class="fas fa-search"></i> Analyzed monthly revenue & category performance.</li>
+            <li><i class="fas fa-chart-line"></i> Uncovered demand trends for management.</li>
+          </ul>
+          </p>
+          <div class="proj-foot">
+            <div class="proj-tools"><span class="proj-tt">Excel</span><span class="proj-tt">Pivot Tables</span></div>
+            <div style="display: flex; gap: 8px;">
+              <a href="#" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Lokesh7-pqndey" target="_blank" class="proj-link"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb"><img src="assets/project-netflix.png" alt="Netflix Analysis">
+            <div class="proj-overlay"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="proj-body"><span class="proj-tag python">Python EDA</span>
+            <h3>Netflix Content Strategy Analysis</h3>
+          </div>
+          <p class="proj-desc">
+          <ul class="proj-impact-list">
+            <li><i class="fas fa-film"></i> Performed EDA on 6,200+ content titles.</li>
+            <li><i class="fas fa-globe"></i> Uncovered trends in ratings, genres & countries.</li>
+            <li><i class="fas fa-tv"></i> Identified that Movies dominate 70% of the library.</li>
+          </ul>
+          </p>
+          <div class="proj-foot">
+            <div class="proj-tools"><span class="proj-tt">Python</span><span class="proj-tt">Pandas</span><span
+                class="proj-tt">Seaborn</span></div>
+            <div style="display: flex; gap: 8px;">
+              <a href="#" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Lokesh7-pqndey" target="_blank" class="proj-link"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb"><img src="assets/project-telecom.png" alt="Churn Prediction">
+            <div class="proj-overlay"><i class="fas fa-external-link-alt"></i></div>
+          </div>
+          <div class="proj-body"><span class="proj-tag ml">Machine Learning</span>
+            <h3>Telecom Customer Churn Prediction</h3>
+          </div>
+          <p class="proj-desc">
+          <ul class="proj-impact-list">
+            <li><i class="fas fa-users"></i> Predicted churn for 7K customers</li>
+            <li><i class="fas fa-cogs"></i> Built ensemble ML models</li>
+            <li><i class="fas fa-bullseye"></i> Achieved 84.68% accuracy</li>
+            <li><i class="fas fa-exclamation-triangle"></i> Identified high-risk segments</li>
+          </ul>
+          </p>
+          <div class="proj-foot">
+            <div class="proj-tools"><span class="proj-tt">Python</span><span class="proj-tt">scikit-learn</span><span
+                class="proj-tt">ML</span></div>
+            <div style="display: flex; gap: 8px;">
+              <a href="#" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Lokesh7-pqndey" target="_blank" class="proj-link"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-briefcase"></i> Career</div>
+        <h2 class="grad-text">Work Experience</h2>
+        <p>Professional journey and milestones</p>
+      </div>
+      <div class="timeline rv">
+        <div class="tl-entry">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <div class="tl-date"><i class="far fa-calendar"></i> October 2021 — Present</div>
+            <h3>Department Manager</h3>
+            <h4>Reliance Retail — Managed Services</h4>
+            <ul>
+              <li>Root cause analysis on 1,000+ SKU inventory data — reduced stock variance by 15%.</li>
+              <li>Built interactive Power BI dashboards & Excel reports for senior leadership.</li>
+              <li>Data cleansing & validation on multi-source datasets for reliable decisions.</li>
+              <li>Cross-functional collaboration to streamline reporting workflows.</li>
+              <li>Executive-ready BI presentations driving operational efficiency.</li>
+            </ul>
+            <div class="tl-tag-row"><span class="tl-tt">Power BI</span><span class="tl-tt">Excel</span><span
+                class="tl-tt">Data Analysis</span><span class="tl-tt">KPIs</span></div>
+          </div>
+        </div>
+        <div class="tl-entry">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <div class="tl-date"><i class="far fa-calendar"></i> Sep 2025 — Mar 2026</div>
+            <h3>Research & Analytics Intern</h3>
+            <h4>Labmantrix</h4>
+            <ul>
+              <li>ML models on large datasets — 20% improvement in predictive accuracy.</li>
+              <li>End-to-end analytics projects delivered within scope & timeline.</li>
+              <li>Research on emerging AI/ML technologies for actionable recommendations.</li>
+            </ul>
+            <div class="tl-tag-row"><span class="tl-tt">Python</span><span class="tl-tt">ML</span><span
+                class="tl-tt">EDA</span><span class="tl-tt">Research</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION ═══ -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-graduation-cap"></i> Background</div>
+        <h2 class="grad-text">Education</h2>
+        <p>Academic qualifications</p>
+      </div>
+      <div class="edu-grid stg">
+        <div class="edu-card">
+          <div class="edu-top-bar"></div>
+          <div class="edicon">🎓</div>
+          <h3>Bachelor of Business Management</h3>
+          <h4>Swami Vivekanand Inst., AP</h4>
+          <p class="edy">2017 – 2020 (Distance)</p><span class="gpa">GPA: 7.0 / 10</span>
+        </div>
+        <div class="edu-card">
+          <div class="edu-top-bar bar2"></div>
+          <div class="edicon">💊</div>
+          <h3>Diploma in Pharmacy</h3>
+          <h4>Govt. Polytechnic Pithuwala, Dehradun</h4>
+          <p class="edy">2014 – 2016</p><span class="gpa">GPA: 8.0 / 10</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATES ═══ -->
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-award"></i> Credentials</div>
+        <h2 class="grad-text">Certifications</h2>
+        <p>Professional achievements</p>
+      </div>
+      <div class="cert-box rv-s">
+        <div class="cert-img"><img src="assets/Screenshot 2025-10-09 100511.png" alt="OdinSchool Certificate"></div>
+        <div class="cert-body">
+          <h3>Certified Data Science Professional</h3>
+          <h4>OdinSchool — Data Science Bootcamp</h4>
+          <p class="cm">Issued: 04 October 2025</p>
+          <p class="cid">ID: ODIN1005371</p>
+          <a href="https://go.odinschool.com/verify-certificate" target="_blank" class="cert-btn"><i
+              class="fas fa-external-link-alt"></i> Verify Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="sec-head rv">
+        <div class="sec-tag"><i class="fas fa-envelope"></i> Reach Out</div>
+        <h2 class="grad-text">Let's Connect</h2>
+        <p>Always open to new opportunities & collaborations</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-left rv-l">
+          <h3>Get in Touch</h3>
+          <p>I'm always open to discussing data challenges, project ideas, or opportunities. Let's turn data into impact
+            together.</p>
+          <div class="cl-items">
+            <a href="mailto:pandeylokesh87@gmail.com" class="cl-item">
+              <div class="cl-ico i1"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>pandeylokesh87@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lokesh-pandey-2265b5218" target="_blank" class="cl-item">
+              <div class="cl-ico i3"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/lokesh-pandey</p>
+              </div>
+            </a>
+            <a href="https://github.com/Lokesh7-pqndey" target="_blank" class="cl-item">
+              <div class="cl-ico i4"><i class="fab fa-github"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <p>github.com/Lokesh7-pqndey</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right rv-r">
+          <form id="contactForm">
+            <div class="frow">
+              <div class="fg"><label for="cn">Your Name</label><input type="text" id="cn" name="name"
+                  placeholder="John Doe" required></div>
+              <div class="fg"><label for="ce">Your Email</label><input type="email" id="ce" name="email"
+                  placeholder="john@example.com" required></div>
+            </div>
+            <div class="fg"><label for="cs">Subject</label><input type="text" id="cs" name="subject"
+                placeholder="Project Collaboration"></div>
+            <div class="fg"><label for="cmsg">Message</label><textarea id="cmsg" name="message"
+                placeholder="Tell me about your project..." required></textarea></div>
+            <button type="submit" class="f-send"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-foot">
+    <div class="container">
+      <div class="foot-inner">
+        <p>&copy; 2026 Lokesh Pandey. Built with passion for data.</p>
+        <div class="soc">
+          <a href="https://github.com/Lokesh7-pqndey" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/lokesh-pandey-2265b5218" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:pandeylokesh87@gmail.com"><i class="fas fa-envelope"></i></a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING DETAILS TAB ═══ -->
+  <div class="floating-details" id="floatingDetails">
+    <div class="fd-content" id="fdContent">
+      <div class="fd-header">
+        <img src="assets/WhatsApp Image 2026-02-28 at 3.16.31 PM.jpeg" alt="Lokesh Pandey" class="fd-photo">
+        <div>
+          <h4>Lokesh Pandey</h4>
+          <p>Data Analyst | Data Scientist</p>
+        </div>
+      </div>
+      <div class="fd-body">
+        <div class="fd-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:pandeylokesh87@gmail.com">pandeylokesh87@gmail.com</a>
+        </div>
+        <div class="fd-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+919456382363">+91-9456382363</a>
+        </div>
+        <div class="fd-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/lokesh-pandey-2265b5218" target="_blank">LinkedIn Profile</a>
+        </div>
+      </div>
+      <div class="fd-footer">
+        <a href="assets/resume.pdf" class="btn-glow fd-btn" target="_blank" download><i class="fas fa-download"></i> Get
+          Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
